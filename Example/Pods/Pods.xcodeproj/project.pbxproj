@@ -90,7 +90,7 @@
 		7E98F96553091B451AB98D832D57E1B6 /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B054E4C3B8A9E993536DF762AA778F72 /* World+DSL.swift */; };
 		801A15DE78DDDCC3B8B5CDF6AA36F7B5 /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF0B825EEC72D8223CE5340941DBD2 /* QuickSelectedTestSuiteBuilder.swift */; };
 		829EB9B81274EE8E8799CBEF337EDDA3 /* Pods-abcdddtest_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F037818F4A4DFF77BEB7DF2C368C8216 /* Pods-abcdddtest_Tests-dummy.m */; };
-		849344FF22A2880F00C571AF /* UIButton+OWExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849344FE22A2880F00C571AF /* UIButton+OWExt.swift */; };
+		8493450522A28A5400C571AF /* UIButtonOWExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8493450422A28A5400C571AF /* UIButtonOWExt.swift */; };
 		8508685F4B3DFD4E93B29948FA0ACF83 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3AD6FDBFE01DF0C4C7790FBF499399C /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DD9CEA1C2CE301862C8890618FDDACA /* Pods-abcdddtest_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 918772BDF24A6A804CB8499EF5120A7D /* Pods-abcdddtest_Example-dummy.m */; };
 		906ECDA1B8908CFF7C14E2A59360C4E1 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72C6DEFFD7A4F968967238A799D9CEE /* BeNil.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -326,7 +326,7 @@
 		8036C74125A971703752608CB217DDC1 /* World.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = World.h; path = Sources/QuickObjectiveC/World.h; sourceTree = "<group>"; };
 		812091D4E0EA4CF180C94D658E9B09D2 /* Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functional.swift; path = Sources/Nimble/Utils/Functional.swift; sourceTree = "<group>"; };
 		838169B98E8E3C2202C79F0A583C5FC5 /* SuiteHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SuiteHooks.swift; path = Sources/Quick/Hooks/SuiteHooks.swift; sourceTree = "<group>"; };
-		849344FE22A2880F00C571AF /* UIButton+OWExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+OWExt.swift"; sourceTree = "<group>"; };
+		8493450422A28A5400C571AF /* UIButtonOWExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButtonOWExt.swift; path = abcdddtest/Classes/UIButtonOWExt.swift; sourceTree = "<group>"; };
 		85CE2C5A07D6167B87AD8BE2D527F1EB /* Nimble-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Nimble-Info.plist"; sourceTree = "<group>"; };
 		85CE6AE58CEA4F2AD1BC778D67CB85B5 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		85D9E4301BE164BF0AC98B3A52A7EA52 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
@@ -637,7 +637,7 @@
 		882E4A2D0157150A5874C1CBE4C67503 /* abcdddtest */ = {
 			isa = PBXGroup;
 			children = (
-				849344FE22A2880F00C571AF /* UIButton+OWExt.swift */,
+				8493450422A28A5400C571AF /* UIButtonOWExt.swift */,
 				63E6AE78F1D00F40E9379FD6339034BA /* Pod */,
 				C0CBF7DB8AB873DA6821CBB2593ABCF3 /* Support Files */,
 			);
@@ -1098,6 +1098,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					958BB5B7BA2A8F5A3BF3330ECE74E8FB = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1179,8 +1184,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				849344FF22A2880F00C571AF /* UIButton+OWExt.swift in Sources */,
 				F9322C6A91DF537E11B7843941DA8BD1 /* abcdddtest-dummy.m in Sources */,
+				8493450522A28A5400C571AF /* UIButtonOWExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1486,6 +1491,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1BEBC95BC7BF11413D9498D99CDE688E /* abcdddtest.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1648,6 +1654,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1BEBC95BC7BF11413D9498D99CDE688E /* abcdddtest.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1668,6 +1675,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
