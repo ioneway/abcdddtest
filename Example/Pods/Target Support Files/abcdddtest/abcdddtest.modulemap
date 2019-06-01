@@ -1,0 +1,6 @@
+framework module abcdddtest {
+  umbrella header "abcdddtest-umbrella.h"
+
+  export *
+  module * { export * }
+}
