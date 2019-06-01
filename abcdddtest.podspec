@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'abcdddtest'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = 'A short description of abcdddtest.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   s.swift_versions = '4.0'
-  s.source_files = 'abcdddtest/Classes/*'
+  s.source_files = 'abcdddtest/Classes/**/*'
   
   # s.resource_bundles = {
   #   'abcdddtest' => ['abcdddtest/Assets/*.png']
